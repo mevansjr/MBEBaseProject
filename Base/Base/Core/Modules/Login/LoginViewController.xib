@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Base" customModuleProvider="target">
+            <connections>
+                <outlet property="passwordField" destination="h4e-kW-Xo7" id="tZN-qr-QZB"/>
+                <outlet property="usernameField" destination="qTK-wq-aSl" id="DXq-5f-Gw7"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ZJ6-wl-LCY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qTK-wq-aSl" customClass="RaisePlaceholder" customModule="RaisePlaceholder">
+                    <rect key="frame" x="30" y="88" width="261" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Lx3-Op-zP8"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="subjectColor">
+                            <color key="value" red="0.19808517506559323" green="0.73333333329999995" blue="0.20709257650810203" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="underLineColor">
+                            <color key="value" red="0.19808517510000001" green="0.73333333329999995" blue="0.20709257649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h4e-kW-Xo7" customClass="RaiseTextField" customModule="RaiseTextField">
+                    <rect key="frame" x="30" y="136" width="261" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Zcs-bj-9cb"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="subjectColor">
+                            <color key="value" red="0.19808517510000001" green="0.73333333329999995" blue="0.20709257649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="underLineColor">
+                            <color key="value" red="0.19808517510000001" green="0.73333333329999995" blue="0.20709257649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uro-XV-ChV">
+                    <rect key="frame" x="30" y="199" width="261" height="40"/>
+                    <color key="backgroundColor" red="0.52980028814721114" green="0.84027408810855042" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="bCV-ds-b8T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <state key="normal" title="Login"/>
+                    <connections>
+                        <action selector="loginAction" destination="-1" eventType="touchUpInside" id="Eu1-Fw-f8d"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="h4e-kW-Xo7" firstAttribute="top" secondItem="qTK-wq-aSl" secondAttribute="bottom" constant="8" id="MYh-WH-YpA"/>
+                <constraint firstItem="uro-XV-ChV" firstAttribute="top" secondItem="h4e-kW-Xo7" secondAttribute="bottom" constant="23" id="OKn-ur-7kY"/>
+                <constraint firstAttribute="trailing" secondItem="qTK-wq-aSl" secondAttribute="trailing" constant="29" id="ZwZ-uA-5V7"/>
+                <constraint firstAttribute="trailing" secondItem="h4e-kW-Xo7" secondAttribute="trailing" constant="29" id="aFv-n9-nTx"/>
+                <constraint firstItem="uro-XV-ChV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="ic9-JQ-7eL"/>
+                <constraint firstItem="qTK-wq-aSl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="88" id="o1j-oy-3u6"/>
+                <constraint firstItem="qTK-wq-aSl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="r7b-pi-3fJ"/>
+                <constraint firstAttribute="trailing" secondItem="uro-XV-ChV" secondAttribute="trailing" constant="29" id="rOr-D9-szn"/>
+                <constraint firstItem="h4e-kW-Xo7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="wcK-qm-X9x"/>
+            </constraints>
+            <point key="canvasLocation" x="34" y="53"/>
+        </view>
+    </objects>
+</document>

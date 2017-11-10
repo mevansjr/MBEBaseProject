@@ -1,0 +1,38 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+use_frameworks!
+
+# ignore all warnings from all pods
+inhibit_all_warnings!
+
+install! 'cocoapods', :deterministic_uuids => false
+
+target 'Base' do
+
+pod 'Fabric'
+pod 'Crashlytics'
+pod 'Branch'
+pod 'RaisePlaceholder', :git => 'https://github.com/najanda89/RaisePlaceholder.git', :branch => 'master'
+pod 'VTAcknowledgementsViewController'
+pod 'SwiftMessages', :git => 'https://github.com/SwiftKickMobile/SwiftMessages.git', :branch => 'swift4.0'
+pod 'PKHUD', :git => 'https://github.com/pkluz/PKHUD.git', :branch => 'release/swift4'
+pod 'SDWebImage', '~>3.8'
+pod 'IQKeyboardManagerSwift', '~> 5.0.0'
+pod 'Fabric'
+pod 'Crashlytics'
+pod 'SwiftyJSON'
+pod 'Alamofire'
+pod 'ObjectMapper'
+pod 'Fakery'
+
+end
+
+target 'BaseTests' do
+
+pod 'SwiftyJSON'
+pod 'Alamofire'
+pod 'ObjectMapper'
+pod 'Fakery'
+
+end
